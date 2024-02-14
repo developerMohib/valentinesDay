@@ -9,9 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-[url(./cool-backgrounddd.png)] h-screen">
     <header>
-        <h1 class="font-bold animate-bounce text-4xl text-center mt-10"> Animation for Valentine's Day.</h1>
+        <h1 class="font-bold animate-bounce text-4xl text-center pt-10"> Animation for Valentine's Day.</h1>
     </header>
 
     <main class="screen-max-width">
@@ -40,7 +40,7 @@
         <!-- Video Player -->
         <section id="videoPlayer">
             <div id="forYes" class="hidden" >
-                <video height="140" width="300" class="mx-auto" controls autoplay src="./antikRunAway.mp4"></video>
+                <video height="140" width="500" class="mx-auto" controls autoplay src="./antikRunAway.mp4"></video>
             </div>
             <div id="notYes" class="hidden">
                 <video height="140" width="300" class="mx-auto" controls autoplay src="./Animation.mp4"></video>
@@ -65,13 +65,18 @@
 
         <!-- supporting section -->
         <section>
-            <div id="lovelove" class="hidden">
-                <img src="./givingFlower.jpg" alt="">
-                <video src="./loveAnimation.mp4"></video>
+            <div id="lovelove" class="hidden flex">
+                <img width="300" height="200" class="mx-auto" src="./givingFlower.jpg" alt="">
+                <div class=" mt-5">
+                    <h3 class="text-6xl font-semibold text-center"> ফুল ফুটুক না ফুটুক আজ বসন্ত </h3>
+                    <h3 class="text-6xl font-semibold text-center"> Take this flower from my side. </h3>
+                </div>
+                <video controls autoplay width="300" class="mx-auto" src="./loveAnimation.mp4"></video>
             </div>
             
             <div id="loselose" class="hidden">
                 <video controls autoplay width="300" class="mx-auto" src="./hateAnimation.mp4"></video>
+                <p> You don't love people but Why you spackled hate to people. </p>
             </div>
         </section>
 
