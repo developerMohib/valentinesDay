@@ -16,21 +16,21 @@
 
     <main class="screen-max-width">
         <!-- Surity of Valentine -->
-        <sectino class="">
+        <sectino id="captionSection" class="">
             <div>
-                <h1 class="text-8xl font-semibold text-center my-5 mt-10">Is Today 14 February Or Valentine's Day</h1>
+                <h1 id="caption" class="text-8xl font-semibold text-center my-5 mt-10">Is Today 14 February Or Valentine's Day</h1>
             </div>
 
             <!-- Agree or Disagree Button -->
             <div class="flex justify-between mt-20 w-4/5 mx-auto">
                 <div>
-                    <button class="btn btn-outline">
+                    <button onclick="playYesButton()" class="btn btn-outline">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
                         Yes !
                     </button>
                 </div>
                 <div>
-                      <button class="btn btn-outline">
+                      <button onclick="playNotYesButton()" class="btn btn-outline">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg> !Yes
                       </button>
                 </div>
@@ -38,32 +38,47 @@
         </sectino>
 
         <!-- Video Player -->
-        <section class="hidden" >
-            <div id="forYes">
-                <video height="140"controls autoplay src="./antikRunAway.mp4"></video>
+        <section id="videoPlayer">
+            <div id="forYes" class="hidden" >
+                <video height="140" width="300" class="mx-auto" controls autoplay src="./antikRunAway.mp4"></video>
             </div>
-            <div id="notYes">
-                <video height="140"controls autoplay src="./Animation.mp4"></video>
+            <div id="notYes" class="hidden">
+                <video height="140" width="300" class="mx-auto" controls autoplay src="./Animation.mp4"></video>
             </div>
+
             <!-- Agree or Disagree Button -->
-            <div class="flex justify-between mt-20 w-4/5 mx-auto">
+            <div id="agreeButton" class="flex justify-between mt-20 w-4/5 mx-auto hidden">
                 <div>
-                    <button class="btn btn-outline">
+                    <button onclick="spackledLove()" id="loveButton" class="btn btn-outline">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
-                        Yes !
+                        Spackled Love
                     </button>
                 </div>
                 <div>
-                      <button class="btn btn-outline">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg> !Yes
+                      <button onclick="stopAbhor()" id="hateButton" class="btn btn-outline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg> 
+                        Spackled Abhorred
                       </button>
                 </div>
             </div>
-
         </section>
+
+        <!-- supporting section -->
+        <section>
+            <div id="lovelove" class="hidden">
+                <img src="./givingFlower.jpg" alt="">
+                <video src="./loveAnimation.mp4"></video>
+            </div>
+            
+            <div id="loselose" class="hidden">
+                <video controls autoplay width="300" class="mx-auto" src="./hateAnimation.mp4"></video>
+            </div>
+        </section>
+
     </main> 
 
     <footer></footer>
     <script src="./app.js"></script>
+    <script src="./app2.js"></script>
 </body>
 </html>
